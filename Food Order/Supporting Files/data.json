@@ -1,0 +1,112 @@
+
+{
+    "offers": {
+        "images": [
+            "ic_off-1",
+            "ic_off-2",
+            "ic_off-3"
+        ]
+    },
+    "orderAgain": [
+        {
+            "imageName": "ic_biriyani",
+            "itemName": "Alpha Biriyani",
+            "deliveryTime": "50 mins or FREE",
+            "discount": "5% OFF up to $6"
+        },
+        {
+            "imageName": "ic_biriyani",
+            "itemName": "Alpha Biriyani",
+            "deliveryTime": "30 mins or FREE",
+            "discount": "20% OFF up to $5"
+        },
+        {
+            "imageName": "ic_biriyani",
+            "itemName": "Alpha Biriyani",
+            "deliveryTime": "40 mins or FREE",
+            "discount": "10% OFF up to $8"
+        },
+        {
+            "imageName": "ic_biriyani",
+            "itemName": "Alpha Biriyani",
+            "deliveryTime": "15 mins or FREE",
+            "discount": "30% OFF up to $7"
+        }
+    ],
+    "orderItem" : [
+        {
+            "imageName": "ic_biriyani2",
+            "itemName": "Healthy"
+        },
+        {
+            "imageName": "ic_biriyani2",
+            "itemName": "Home Style"
+        },
+        {
+            "imageName": "ic_biriyani2",
+            "itemName": "Pizza"
+        },
+        {
+            "imageName": "ic_biriyani2",
+            "itemName": "Biryani"
+        },
+        {
+            "imageName": "ic_biriyani2",
+            "itemName": "Chicken"
+        },
+        {
+            "imageName": "ic_biriyani2",
+            "itemName": "Burger"
+        },
+        {
+            "imageName": "ic_biriyani2",
+            "itemName": "Kesari Bath"
+        },
+        {
+            "imageName": "ic_biriyani2",
+            "itemName": "Chaat"
+        }
+    ],
+    "restaurants": [
+        {
+            "restaurantName": "Nirakar Biriyani Zone",
+            "address": "HSR Layout, Bengaluru",
+            "imageName": "ic_pizza",
+            "deliveryTime": "10 mins or FREE",
+            "discount": "10% OFF up to $15",
+            "price": "$20 for one",
+            "rating": "4.5",
+            "numberOfOrder": "2500+ order placed form here recently"
+        },
+        {
+            "restaurantName": "Sai Restaurant ",
+            "address": "HSR Layout, Bengaluru",
+            "imageName": "ic_pizza",
+            "deliveryTime": "20 mins or FREE",
+            "discount": "20% OFF up to $10",
+            "price": "$60 for one",
+            "rating": "3.5",
+            "numberOfOrder": "1500+ order placed form here recently"
+        },
+        {
+            "restaurantName": "Biriyani Zone",
+            "address": "HSR Layout, Bengaluru",
+            "imageName": "ic_pizza",
+            "deliveryTime": "50 mins or FREE",
+            "discount": "50% OFF up to $14",
+            "price": "$40 for one",
+            "rating": "5",
+            "numberOfOrder": "2000+ order placed form here recently"
+        },
+        {
+            "restaurantName": "New Biriyani Zone",
+            "address": "HSR Layout, Bengaluru",
+            "imageName": "ic_pizza",
+            "deliveryTime": "20 mins or FREE",
+            "discount": "30% OFF up to $10",
+            "price": "$30 for one",
+            "rating": "4.1",
+            "numberOfOrder": "1000+ order placed form here recently"
+        }
+    ]
+}
