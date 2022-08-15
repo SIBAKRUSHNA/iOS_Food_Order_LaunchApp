@@ -10,7 +10,6 @@ import CoreLocation
 
 class OrderViewController: UIViewController {
     @IBOutlet weak var orderTableView: OrderTableView!
-    var orderData: OrderResponse?
     var locationManager:CLLocationManager!
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,8 +28,9 @@ class OrderViewController: UIViewController {
     }
     private func setData(_ orderData: OrderResponse) {
         orderTableView.setData(orderData)
-        orderTableView.returnToSearchPage = { 
-            
+        orderTableView.returnToSearchPage = {
+            guard let searchViewController = UIStoryboard(name: "Home", bundle: nil).instantiateViewController(withIdentifier: "SearchViewController") as? SearchViewController else { return }
+            self.navigationController?.pushViewController(searchViewController, animated: true)
         }
     }
     func setDataFromJson() {

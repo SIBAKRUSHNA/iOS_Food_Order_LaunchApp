@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="mKn-du-xC5">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="HNx-7M-qtI">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -17,10 +18,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HS4-fu-Fd5">
-                                <rect key="frame" x="0.0" y="44" width="414" height="769"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
                                 <subviews>
                                     <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="9JS-1K-OH4" customClass="OrderTableView" customModule="Food_Order" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="769"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="725"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </tableView>
                                 </subviews>
@@ -54,6 +55,66 @@
             </objects>
             <point key="canvasLocation" x="-71" y="335"/>
         </scene>
+        <!--Search View Controller-->
+        <scene sceneID="Svh-dR-Net">
+            <objects>
+                <viewController storyboardIdentifier="SearchViewController" id="yZF-FR-ogU" customClass="SearchViewController" customModule="Food_Order" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="FW1-Wl-W3K">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xtC-4x-ijy">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="uUR-EL-nFZ">
+                                        <rect key="frame" x="20" y="20" width="374" height="778"/>
+                                        <subviews>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Search Restaurant" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1Dd-m5-Lk5">
+                                                <rect key="frame" x="0.0" y="0.0" width="374" height="55"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="55" id="oew-qA-4Pw"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="JnO-be-VgD">
+                                                <rect key="frame" x="0.0" y="75" width="374" height="703"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <connections>
+                                                    <outlet property="dataSource" destination="yZF-FR-ogU" id="NMd-2s-Qew"/>
+                                                    <outlet property="delegate" destination="yZF-FR-ogU" id="Elo-Cn-M7p"/>
+                                                </connections>
+                                            </tableView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="uUR-EL-nFZ" firstAttribute="top" secondItem="xtC-4x-ijy" secondAttribute="top" constant="20" id="Aym-uh-2dg"/>
+                                    <constraint firstAttribute="trailing" secondItem="uUR-EL-nFZ" secondAttribute="trailing" constant="20" id="gMA-cd-Ov4"/>
+                                    <constraint firstItem="uUR-EL-nFZ" firstAttribute="leading" secondItem="xtC-4x-ijy" secondAttribute="leading" constant="20" id="hYT-Wn-x3u"/>
+                                    <constraint firstAttribute="bottom" secondItem="uUR-EL-nFZ" secondAttribute="bottom" constant="20" id="sfC-2h-Tye"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="sip-vU-QXJ"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="xtC-4x-ijy" firstAttribute="leading" secondItem="sip-vU-QXJ" secondAttribute="leading" id="DU3-QC-neo"/>
+                            <constraint firstItem="xtC-4x-ijy" firstAttribute="top" secondItem="sip-vU-QXJ" secondAttribute="top" id="P3T-SP-CcC"/>
+                            <constraint firstItem="sip-vU-QXJ" firstAttribute="trailing" secondItem="xtC-4x-ijy" secondAttribute="trailing" id="uIW-Kg-FpY"/>
+                            <constraint firstItem="sip-vU-QXJ" firstAttribute="bottom" secondItem="xtC-4x-ijy" secondAttribute="bottom" id="uOg-aR-Wf7"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="searchResultTableView" destination="JnO-be-VgD" id="KLy-8A-EKG"/>
+                        <outlet property="searchTextField" destination="1Dd-m5-Lk5" id="kVv-cj-est"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2gD-jJ-RQj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="870" y="-306"/>
+        </scene>
         <!--Pro-->
         <scene sceneID="bja-0p-cJz">
             <objects>
@@ -86,10 +147,27 @@
             </objects>
             <point key="canvasLocation" x="-70" y="-349"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="dVb-sw-yZU">
+            <objects>
+                <navigationController id="HNx-7M-qtI" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="QBj-s5-8OP">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="mKn-du-xC5" kind="relationship" relationship="rootViewController" id="gea-Pr-Z62"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pdO-ud-3us" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1704" y="76"/>
+        </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="emO-4y-5Rb">
             <objects>
                 <tabBarController id="mKn-du-xC5" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="bCs-MZ-YgD"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="sQ9-0D-Lri">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -112,5 +190,8 @@
         <image name="ic_go-out" width="23" height="23"/>
         <image name="ic_order" width="23" height="23"/>
         <image name="ic_pro" width="23" height="23"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
     </resources>
 </document>

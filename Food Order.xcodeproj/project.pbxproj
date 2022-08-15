@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0B83F68128AA936200675378 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B83F67F28AA936200675378 /* SearchViewController.swift */; };
+		0B83F68228AA936200675378 /* SearchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0B83F68028AA936200675378 /* SearchViewController.xib */; };
+		0B83F68628AA984300675378 /* TagCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B83F68428AA984300675378 /* TagCollectionViewCell.swift */; };
+		0B83F68728AA984300675378 /* TagCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0B83F68528AA984300675378 /* TagCollectionViewCell.xib */; };
+		0B83F68B28AAA8CE00675378 /* SearchResultTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B83F68928AAA8CE00675378 /* SearchResultTableViewCell.swift */; };
+		0B83F68C28AAA8CE00675378 /* SearchResultTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0B83F68A28AAA8CE00675378 /* SearchResultTableViewCell.xib */; };
 		0B8C6F5928A6924500B13A08 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B8C6F5828A6924500B13A08 /* AppDelegate.swift */; };
 		0B8C6F5B28A6924500B13A08 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B8C6F5A28A6924500B13A08 /* SceneDelegate.swift */; };
 		0B8C6F5D28A6924500B13A08 /* OrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B8C6F5C28A6924500B13A08 /* OrderViewController.swift */; };
@@ -66,6 +72,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0B83F67F28AA936200675378 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		0B83F68028AA936200675378 /* SearchViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchViewController.xib; sourceTree = "<group>"; };
+		0B83F68428AA984300675378 /* TagCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagCollectionViewCell.swift; sourceTree = "<group>"; };
+		0B83F68528AA984300675378 /* TagCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TagCollectionViewCell.xib; sourceTree = "<group>"; };
+		0B83F68928AAA8CE00675378 /* SearchResultTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultTableViewCell.swift; sourceTree = "<group>"; };
+		0B83F68A28AAA8CE00675378 /* SearchResultTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchResultTableViewCell.xib; sourceTree = "<group>"; };
 		0B8C6F5528A6924500B13A08 /* Food Order.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Food Order.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0B8C6F5828A6924500B13A08 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0B8C6F5A28A6924500B13A08 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -145,6 +157,34 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0B83F67E28AA918600675378 /* Search  */ = {
+			isa = PBXGroup;
+			children = (
+				0B83F67F28AA936200675378 /* SearchViewController.swift */,
+				0B83F68028AA936200675378 /* SearchViewController.xib */,
+				0B83F68828AAA87400675378 /* view */,
+			);
+			path = "Search ";
+			sourceTree = "<group>";
+		};
+		0B83F68328AA97A100675378 /* TagCollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				0B83F68428AA984300675378 /* TagCollectionViewCell.swift */,
+				0B83F68528AA984300675378 /* TagCollectionViewCell.xib */,
+			);
+			path = TagCollectionViewCell;
+			sourceTree = "<group>";
+		};
+		0B83F68828AAA87400675378 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				0B83F68928AAA8CE00675378 /* SearchResultTableViewCell.swift */,
+				0B83F68A28AAA8CE00675378 /* SearchResultTableViewCell.xib */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
 		0B8C6F4C28A6924500B13A08 = {
 			isa = PBXGroup;
 			children = (
@@ -228,6 +268,7 @@
 			children = (
 				0B8C6F8A28A6A3D100B13A08 /* Application */,
 				0B8C6F8C28A6A52500B13A08 /* Order */,
+				0B83F67E28AA918600675378 /* Search  */,
 			);
 			path = Features;
 			sourceTree = "<group>";
@@ -381,6 +422,7 @@
 			children = (
 				0BF01BB528A97A4D00F2B79B /* SearchAndTagTableViewCell.swift */,
 				0BF01BB628A97A4D00F2B79B /* SearchAndTagTableViewCell.xib */,
+				0B83F68328AA97A100675378 /* TagCollectionViewCell */,
 			);
 			path = SearchAndTagTableViewCell;
 			sourceTree = "<group>";
@@ -523,11 +565,14 @@
 				0BE96C9C28A8940300C934C4 /* PreviousOrderTableViewCell.xib in Resources */,
 				0B8C6F6228A6924B00B13A08 /* Assets.xcassets in Resources */,
 				0B8C6F9528A7825300B13A08 /* OfferTableViewCell.xib in Resources */,
+				0B83F68C28AAA8CE00675378 /* SearchResultTableViewCell.xib in Resources */,
+				0B83F68228AA936200675378 /* SearchViewController.xib in Resources */,
 				0BB93EA428A7E3310020E6BA /* PreviousOrderCollectionViewCell.xib in Resources */,
 				0BF01BB828A97A4D00F2B79B /* SearchAndTagTableViewCell.xib in Resources */,
 				0BF01BAE28A8BA4100F2B79B /* RestaurantTableViewCell.xib in Resources */,
 				0B8C6F6028A6924500B13A08 /* Home.storyboard in Resources */,
 				0BF01BB328A8BAA000F2B79B /* RestaurantCollectionView.xib in Resources */,
+				0B83F68728AA984300675378 /* TagCollectionViewCell.xib in Resources */,
 				0BF01BA328A8A92200F2B79B /* ItemsTableViewCell.xib in Resources */,
 				0BF01BA928A8AD0900F2B79B /* ItemsCollectionViewCell.xib in Resources */,
 			);
@@ -669,14 +714,17 @@
 				0BF01BA828A8AD0900F2B79B /* ItemsCollectionViewCell.swift in Sources */,
 				0BF01BA228A8A92200F2B79B /* ItemsTableViewCell.swift in Sources */,
 				0BB93E9728A7C8950020E6BA /* ContentLayoutHelper.swift in Sources */,
+				0B83F68B28AAA8CE00675378 /* SearchResultTableViewCell.swift in Sources */,
 				0BB93EAD28A800C40020E6BA /* OrderResponse.swift in Sources */,
 				0B8C6F8F28A77F6500B13A08 /* OrderTableView.swift in Sources */,
 				0B8C6F5B28A6924500B13A08 /* SceneDelegate.swift in Sources */,
+				0B83F68128AA936200675378 /* SearchViewController.swift in Sources */,
 				0BB93EA928A800AE0020E6BA /* OrderAgain.swift in Sources */,
 				0BB93E9B28A7D7A30020E6BA /* UIView+Extensions.swift in Sources */,
 				0BF01BAD28A8BA4100F2B79B /* RestaurantTableViewCell.swift in Sources */,
 				0BF01BB228A8BAA000F2B79B /* RestaurantCollectionView.swift in Sources */,
 				0B8C6F9A28A787AB00B13A08 /* OffersCollectionViewCell.swift in Sources */,
+				0B83F68628AA984300675378 /* TagCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
