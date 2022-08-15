@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		0B83F68128AA936200675378 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B83F67F28AA936200675378 /* SearchViewController.swift */; };
-		0B83F68228AA936200675378 /* SearchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0B83F68028AA936200675378 /* SearchViewController.xib */; };
 		0B83F68628AA984300675378 /* TagCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B83F68428AA984300675378 /* TagCollectionViewCell.swift */; };
 		0B83F68728AA984300675378 /* TagCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0B83F68528AA984300675378 /* TagCollectionViewCell.xib */; };
 		0B83F68B28AAA8CE00675378 /* SearchResultTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B83F68928AAA8CE00675378 /* SearchResultTableViewCell.swift */; };
@@ -73,7 +72,6 @@
 
 /* Begin PBXFileReference section */
 		0B83F67F28AA936200675378 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
-		0B83F68028AA936200675378 /* SearchViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchViewController.xib; sourceTree = "<group>"; };
 		0B83F68428AA984300675378 /* TagCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagCollectionViewCell.swift; sourceTree = "<group>"; };
 		0B83F68528AA984300675378 /* TagCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TagCollectionViewCell.xib; sourceTree = "<group>"; };
 		0B83F68928AAA8CE00675378 /* SearchResultTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultTableViewCell.swift; sourceTree = "<group>"; };
@@ -161,7 +159,6 @@
 			isa = PBXGroup;
 			children = (
 				0B83F67F28AA936200675378 /* SearchViewController.swift */,
-				0B83F68028AA936200675378 /* SearchViewController.xib */,
 				0B83F68828AAA87400675378 /* view */,
 			);
 			path = "Search ";
@@ -566,7 +563,6 @@
 				0B8C6F6228A6924B00B13A08 /* Assets.xcassets in Resources */,
 				0B8C6F9528A7825300B13A08 /* OfferTableViewCell.xib in Resources */,
 				0B83F68C28AAA8CE00675378 /* SearchResultTableViewCell.xib in Resources */,
-				0B83F68228AA936200675378 /* SearchViewController.xib in Resources */,
 				0BB93EA428A7E3310020E6BA /* PreviousOrderCollectionViewCell.xib in Resources */,
 				0BF01BB828A97A4D00F2B79B /* SearchAndTagTableViewCell.xib in Resources */,
 				0BF01BAE28A8BA4100F2B79B /* RestaurantTableViewCell.xib in Resources */,

@@ -62,12 +62,11 @@ extension SearchAndTagTableViewCell: UICollectionViewDataSource,  UICollectionVi
         return self.getCellSize()
     }
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
-        return UIEdgeInsets(top: 10, left: self.leftCellSpace, bottom: 10, right: self.rightCellSpace)
+        return UIEdgeInsets(top: 0, left: self.leftCellSpace, bottom: 0, right: self.rightCellSpace)
     }
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
         return cellSpacing
     }
 }
 extension SearchAndTagTableViewCell: UICollectionViewDelegate {
-    
 }

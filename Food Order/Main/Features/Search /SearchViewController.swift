@@ -72,4 +72,8 @@ extension SearchViewController: UITextFieldDelegate {
         }
         return true
     }
+    func textFieldDidBeginEditing(_ textField: UITextField) {
+        self.searchResults.removeAll()
+        self.searchResultTableView.reloadData()
+    }
 }
