@@ -35,15 +35,11 @@ class SearchViewController: UIViewController {
         }
     }
     func searchResultData(_ searchString: String) {
-        var restaurantsName = [String]()
         orderData?.restaurants?.forEach({ restaurant in
-            restaurantsName.append(restaurant.restaurantName ?? "")
-        })
-        restaurantsName.forEach { name in
-            if searchString.lowercased().trimmingCharacters(in: .whitespaces) == name.lowercased().trimmingCharacters(in: .whitespaces) {
-                searchResults.append(name)
+            if (restaurant.restaurantName ?? "").lowercased().trimmingCharacters(in: .whitespaces) == searchString.lowercased().trimmingCharacters(in: .whitespaces) {
+                searchResults.append(restaurant.restaurantName ?? "")
             }
-        }
+        })
         if searchResults.isEmpty {
             searchResults.append("No Search Result Found")
         }
